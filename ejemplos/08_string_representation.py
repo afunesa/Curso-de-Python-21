@@ -1,5 +1,10 @@
 a = 1
 b = 2
+texto_uno = 'De vez en cuando'
+texto_dos = 'la vida'
+print(f'Dice un cantautor que "{texto_uno} {texto_dos} toma conmigo café" ')
+
+exit(0)
 
 # recomended
 print(f'El valor de a = {a} y el de b es {b}, y el valor de a menos b = {b}')

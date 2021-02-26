@@ -62,15 +62,5 @@ print(laura)
 carlos['surname'] = 'Alvez'
 print(carlos)
 print(laura)
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+
+
