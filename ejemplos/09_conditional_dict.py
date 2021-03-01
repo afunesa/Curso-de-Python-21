@@ -49,32 +49,42 @@
 #         print('YOU SHALL NOT PASS')
 
 # REFACTOR
+#
+# country_text = '''
+# Choose one number:
+# 1.- Spain
+# 2.- France
+# 3.- EEUU
+# '''
+#
+# COUNTRIES_RULES = {
+#                    1: {'name': 'Spain', 'age': 18},
+#                    2: {'name': 'France', 'age': 19},
+#                    3: {'name': 'EEUU', 'age': 21}
+#                    }
+#
+# client_age = input('Tell me your age: ')
+# try:
+#     client_age = int(client_age)
+# except ValueError as err:
+#     client_age = 18
+#     print(f'WE HAVE AN ERROR {err}, so we put client_age age as {client_age}')
+#
+# print(country_text)
+# country_number = int(input('Choose a country number: '))
+# country = COUNTRIES_RULES[country_number]
+# print(f'YOU ARE IN {country["name"]} AND THE AGE IS {country["age"]}')
+# if client_age >= country["age"]:
+#     print('PLEASE COME IN')
+# else:
+#     print('YOU SHALL NOT PASS')
+#
 
-country_text = '''
-Choose one number:
-1.- Spain
-2.- France
-3.- EEUU
-'''
+fruits = ['bananas', 'apples', 'pears', 'oranges']
+count = 0
+num_items = len(fruits)
+print(num_items)
 
-COUNTRIES_RULES = {
-                   1: {'name': 'Spain', 'age': 18},
-                   2: {'name': 'France', 'age': 19},
-                   3: {'name': 'EEUU', 'age': 21}
-                   }
-
-client_age = input('Tell me your age: ')
-try:
-    client_age = int(client_age)
-except ValueError as err:
-    client_age = 18
-    print(f'WE HAVE AN ERROR {err}, so we put client_age age as {client_age}')
-
-print(country_text)
-country_number = int(input('Choose a country number: '))
-country = COUNTRIES_RULES[country_number]
-print(f'YOU ARE IN {country["name"]} AND THE AGE IS {country["age"]}')
-if client_age >= country["age"]:
-    print('PLEASE COME IN')
-else:
-    print('YOU SHALL NOT PASS')
+while count <= (num_items-1):
+    print (fruits[count])
+    count = count + 1
