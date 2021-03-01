@@ -1,30 +1,25 @@
 # WHILE
-# FOR
+# PRINT 2 TABLE
 
-# WHILE
 
-a = 1
-while a <= 100:
-    print(f'a is {a}')
-    a += 1
+for number in range(1, 11):
+    print(f'1 x {number} = {number}')
+print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
 
-# FOR
-text = 'hello world'
-for character in text:
-    print(character)
+for number in range(1, 11):
+    print(f'2 x {number} = {2 * number}')
+print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
 
-fruits = ['banana', 'apples', 'pears']
+for number in range(1, 11):
+    print(f'3 x {number} = {3 * number}')
+print('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
 
-for fruit in fruits:
-    print(fruit)
+for number in range(1, 11):
+    print(f'4 x {number} = {4 * number}')
 
-fruits = ['banana', 'apples', 'pears', 'orange']
-a = 0
-fruits_len = len(fruits)
-while a < fruits_len:
-    print('fruit is ', fruits[a])
-    a += 1
 
-fruits = {'banana', 'apples', 'pears', 'orange'}
-for fruit in fruits:
-    print(fruit)
+# REFACTORED
+for number in range(1, 11):
+    for multiplier in range(1, 11):
+        print(f'{number} x {multiplier} = {number * multiplier}')
+    print('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
