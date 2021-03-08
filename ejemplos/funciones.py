@@ -7,16 +7,22 @@
 # say_jose()
 # say_name('Desi')
 #
-# def multiply(a, b):
+# def multiply(a, b):cd
 #     return a * b
 #
 # result = multiply(2, 8)
 # print(result)
+import requests
 
+from random import randint
+
+print(randint(1,80))
+
+aa = requwat.get ()
 def multiply_small(a, b):
     result = a * b
     if result < 100:
-        return result
+        return resultconda
     print('THIS IS BIGGER THAN 100')
 
 x = multiply_small(2, 6)
