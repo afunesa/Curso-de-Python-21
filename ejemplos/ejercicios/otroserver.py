@@ -7,12 +7,12 @@ app = Flask(__name__)
 @app.route('/random')
 
 def random_number():
-    # first_num = int(request.args.get('first_num'))
-    # second_num = int(request.args.get('second_num'))
-    # pupil_name = request.args.get('pupil_name')
-    # print(f'{pupil_name} HA HECHO LA REQUEST')
-    # return str(randint(first_num, second_num))
-    return jsonify('hello world')
+    first_num = int(request.args.get('first_num'))
+    second_num = int(request.args.get('second_num'))
+    pupil_name = request.args.get('pupil_name')
+    print(f'{pupil_name} HA HECHO LA REQUEST')
+    return str(randint(first_num, second_num))
+   # return jsonify('hello world')
 
 # @app.route('/random')
 # def random_number():
